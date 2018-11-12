@@ -17,6 +17,7 @@ public class aplication {
         factorial();
         pares();
         multiplos3();
+        figo();
     }
     public static void factorial() {
         long fac=1;
@@ -53,5 +54,21 @@ public class aplication {
         }
         System.out.println("");
     }
-    
+    public static void figo(){
+    int n1 = 0;
+        int n2 = 1;
+        int aux;
+        int limite = 100;
+
+        System.out.println(n1);
+        System.out.println(n2);
+
+        while (n2 + n1 <= limite) {
+            aux = n1;
+            n1 = n2;
+            n2 = aux + n1;
+
+            System.out.println(n2);
+        }
+    }
 }
